@@ -1,4 +1,4 @@
-# cumentation Tips
+# documentation Tips
 
 # Table structure
 | First Header  | Second Header |
