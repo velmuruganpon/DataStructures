@@ -42,7 +42,7 @@ set -vx
 | result            |       string Found!!!                                                                   |
 
 
-@@@ Example
+### Example
 
 ```
 ~/DataStructures$ python findStr.py 
