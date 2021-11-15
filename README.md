@@ -1,4 +1,4 @@
-# documentation Tips
+# Documentation Tips
 
 # Table structure
 | First Header  | Second Header |
@@ -16,6 +16,12 @@
 @@ text in purple (and bold)@@
 ```
 
+# code block
+
+```
+#!/bin/bash
+set -vx
+```
 
 
 # DataStructures
@@ -35,6 +41,10 @@
 | Ex                |       findText( xs['xxx'], 'xxx' )                                                      |
 | result            |       string Found!!!                                                                   |
 
+
+```diff
++ Example
+```
 
 ```
 ~/DataStructures$ python findStr.py 
