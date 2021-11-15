@@ -6,11 +6,24 @@
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
+ # Coloured text 
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 
 
 # DataStructures
 
-## Function findText
+## Functions 
+``` diff
+@@ findText(xs:list, finStr:str) @@
+```
 
 
 | Content           | Values                                                                                  |
