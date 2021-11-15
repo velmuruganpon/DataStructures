@@ -34,3 +34,23 @@
 | Description       |       To check the string in the given list                                             |
 | Ex                |       findText( xs['xxx'], 'xxx' )                                                      |
 | result            |       string Found!!!                                                                   |
+
+
+```
+~/DataStructures$ python findStr.py 
+string found!!!
+string found!!!
+
+~/DataStructures$ cat findStr.py 
+import common
+
+xs = ['vel', 'vel', 'raj']
+findStr = 'vel'
+
+def main(xs:list, findStr : str):
+  common.findText(xs,findStr.lower())
+  
+
+if __name__ == "__main__":
+  main(xs, findStr)
+  ```
