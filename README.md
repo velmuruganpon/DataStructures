@@ -40,6 +40,7 @@ set -vx
 | Description       |       To check the string in the given list                                             |
 | Ex                |       findText( xs['xxx'], 'xxx' )                                                      |
 | result            |       string Found!!!                                                                   |
+| Complexity        |       O(n)                                                                              |
 
 
 ### Example
@@ -74,6 +75,7 @@ if __name__ == "__main__":
 | Updated Date      |       2021-11-16                                                                        |
 | Arguments         |       Decorator, function to be passed                                                  |
 | Description       |       To check the ececution time                                                       |
+
 
 
 
