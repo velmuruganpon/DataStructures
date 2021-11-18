@@ -7,6 +7,14 @@
         "version": 587,
         "index": 61
       }
+    ],
+    "sys-installations/configure.sh": [
+      {
+        "id": "fc946b0b-0022-42b9-bfad-ebded43e0d71",
+        "line": 12,
+        "version": 691,
+        "index": 144
+      }
     ]
   }
 }
