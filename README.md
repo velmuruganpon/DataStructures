@@ -93,3 +93,41 @@ string found!!!
      8    findText(xs,findStr.lower())  
      
   ```
+
+``` diff
+@@ profile @@
+```
+
+
+| Content           | Values                                                                                  |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| Creation Date     |       2021-11-18                                                                        |
+| Updated Date      |       2021-11-18                                                                        |
+| Arguments         |       Decorator, function to be passed                                                  |
+| Description       |       To check the memory usage                                                         |
+
+
+
+
+### Example
+
+```
+~/DataStructures/bin$ python findStr.py 
+string found!!!
+string found!!!
+
+"findListElement" took 0.393 ms to execute
+
+Filename: /home/runner/DataStructures/bin/common.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+    11     17.4 MiB     17.4 MiB           1     @wraps(myFunc)
+    12                                           def timing(*args, **kwargs):
+    13     17.4 MiB      0.0 MiB           1       startTime = time.time()
+    14     17.4 MiB      0.0 MiB           1       retVal = myFunc(*args, **kwargs)
+    15     17.4 MiB      0.0 MiB           1       endTime = time.time()
+    16     17.4 MiB      0.0 MiB           1       print('"{}" took {:.3f} ms to execute\n'.format(myFunc.__name__, (endTime - startTime) * 1000))
+    17     17.4 MiB      0.0 MiB           1       return retVal
+  ```
+
