@@ -1,5 +1,6 @@
 from functools import wraps
 from memory_profiler import profile
+from ListOperations import ListOperations
 import time
 
 # wraps is used to get the __doc__ and __name__ from the child functions
@@ -26,7 +27,6 @@ def findListElement(xs: list, finStr : str) :
   if lenFindXs > 0:
     print( ( "string found!!!" + "\n")  * lenFindXs )
 
-
 @profile
 @timer
 def subArray( xs:list):
@@ -42,3 +42,9 @@ def subArray( xs:list):
       resXs.append(xs[strIdx:endIdx + 1]) # O(1)
     # print("")
   return resXs
+
+@profile
+@timer
+def foList(xs: list):
+  return ListOperations(xs)
+

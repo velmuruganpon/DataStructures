@@ -1,4 +1,8 @@
-import profile
-import re
+import sys
 
-profile.run(re.compile("foo|bar"))
+sys.path.append('bin/')
+from common import foList
+
+xs = [ 'vel', 'raj' ,' abi']
+a = foList(xs)
+print(id(a))

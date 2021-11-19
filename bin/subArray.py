@@ -7,8 +7,8 @@ from common import subArray
 # without print statements 500 elements - 1101.084 ms 
 # without print statements 600 elements - 2752.036 ms
 
-xs = [ i for i in range(0,500) ]
+xs = [ i for i in range(0,5) ]
 
 if __name__ == "__main__":
   outXs = subArray(xs)
-  # print(outXs)
+  print(outXs)
