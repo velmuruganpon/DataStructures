@@ -48,3 +48,10 @@ def subArray( xs:list):
 def foList(xs: list):
   return ListOperations(xs)
 
+@profile
+@timer
+def reverseStr(input : str):
+  return input[::-1]
+
+
+
