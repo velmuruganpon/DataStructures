@@ -1,4 +1,2 @@
-import sys
-
-sys.path.append('bin/')
+print(len('vel'))
 
