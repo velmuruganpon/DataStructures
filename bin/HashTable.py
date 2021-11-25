@@ -28,9 +28,6 @@ class HashTable:
     return str(self.__dict__)
   
   def hash(self, key):
-    """
-    In this use case, we are taking an index as hash values
-    """
     return len(key) % self.size
    
   def getLength(self, xs):
