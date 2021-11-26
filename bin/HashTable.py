@@ -45,6 +45,16 @@ class HashTable:
     else:
       return False, None
 
+  def keys(self):
+    keysXs = []
+    for i in range(self.size):
+      ele = self.data[i]
+      if ele:
+        for i in ele:
+          key = i[0]
+          keysXs.append(key)
+    return keysXs
+  
   def set(self, key, value):
     hashId = self.hash(str(key))
     ele = self.data[hashId]
