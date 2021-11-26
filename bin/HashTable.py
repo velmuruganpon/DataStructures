@@ -38,7 +38,6 @@ class HashTable:
       lenEle = self.getLength(ele)
       for i in range(lenEle):
         if ele[i][0] == key:
-          print("Key - {0} already exists".format(key))
           return True, ele[i][1]
         else:
           return False, None
@@ -62,6 +61,7 @@ class HashTable:
     chkEle = True if ele else False
     chkKeyInEle, val = self.ifKeyValueInEle(chkEle, ele, key)
     if chkKeyInEle:
+      print("Key - {0} already exists".format(key))
       sys.exit(-1)
     else:
       ele.append([key, value])
