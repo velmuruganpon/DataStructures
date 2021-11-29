@@ -70,11 +70,19 @@ class LinkedList:
       sys.exit(-1)
     self.length = self.length - 1
     return None
-
-
-
-
-
+  
+  def reverse(self):
+    if self.length > 1:
+      first = self.head
+      second = first.next
+      while second:
+        temp = second.next
+        second.next = first
+        first = second
+        second = temp
+      self.head.next = None
+      self.head = first
+    return None
 
 lxs = LinkedList(10)
 lxs.insert(1,5)
@@ -99,5 +107,124 @@ lxs.delete(5)
 lxs.print()
 lxs.delete(5)
 lxs.print()
-lxs.delete(99)
+lxs.reverse()
 lxs.print()
+
+"""
+{ 
+value : 1
+next : {
+				value : 2
+				next  : {
+							value : 3 
+							next : {
+										value : 4
+										next : {
+													value : 5
+													next : None
+												}
+									}
+					}
+		}
+}
+
+
+second.next = first
+
+
+value : 2
+next  : { 
+		value : 1
+		next : {
+						value : 2
+						next  : {
+									value : 3 
+									next : {
+												value : 4
+												next : {
+															value : 5
+															next : None
+														}
+											}
+							}
+				}
+		}
+
+		
+			
+				
+first = second
+value : 2
+next  : { 
+		value : 1
+		next : {
+						value : 2
+						next  : {
+									value : 3 
+									next : {
+												value : 4
+												next : {
+															value : 5
+															next : None
+														}
+											}
+							}
+				}
+		}
+
+second:
+{
+value : 3 
+next : {
+			value : 4
+			next : {
+						value : 5
+						next : None
+					}
+		}
+
+
+}
+							
+
+first = head  # 1 2 3 4 5
+second = first.next # 2 3 4 5
+
+while second
+
+iteration 1:
+
+	temp = second.next # 3 4 5
+	second.next = first  # value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 }
+	first = second #  # value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 }
+	second = temp # value 3 4 5
+	
+first = second #  # value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 }
+second = # 3 4 5
+iteration 2:
+	temp = second.next # 4 5
+	second.next = first  # value = 3 , next = { value = 2 , next = 1 , 2, 3, 4, 5 }
+	first = second #  # value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } }
+	second = temp # value 4 5
+
+first = second #  # value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } }
+second = # 4 5
+iteraion 3:
+	temp = second.next #5 next null
+	second.next = first # value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } }
+	first = second # value = 4, next =  { value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } } }
+	second = temp
+
+first = second # value = 4, next =  { value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } } }
+second = # 5 null
+
+iteration 4:
+	temp = second.next #null
+	second.next = first # value = 4, next =  { value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } } }
+	first = second  value = 5 , next = { value = 4, next =  { value = 3 , next = { value = 2 , next = { value = 1 , next = 1 , 2, 3, 4, 5 } } } }
+	second = temp
+
+
+self.head.next = null
+self.head = first
+"""
