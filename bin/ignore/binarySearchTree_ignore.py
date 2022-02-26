@@ -106,7 +106,6 @@ class BST:
         currentNode.value = leftMostNode.value        
       else:
         currentNode.value = rightNode.value
-        currentNode.right = None
     return self.root
 
 
@@ -194,6 +193,19 @@ obj1.printHTree(obj1.root, 0)
 
 print ( "+++++++++++++++++++++++++++++++++++++++++++")
 obj1.remove(205)
+obj1.printHTree(obj1.root, 0)
+
+print ( "+++++++++++++++++++++++++++++++++++++++++++")
+obj1.remove(25)
+obj1.printHTree(obj1.root, 0)
+
+print ( "+++++++++++++++++++++++++++++++++++++++++++")
+obj1.remove(12)
+obj1.printHTree(obj1.root, 0)
+
+
+print ( "+++++++++++++++++++++++++++++++++++++++++++")
+obj1.remove(30)
 obj1.printHTree(obj1.root, 0)
 
 
